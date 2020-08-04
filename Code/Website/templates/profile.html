@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        function update_profile() {
+            alert('profile updated')
+        }
+    </script>
+</head>
+<body>
+    <p>{{msg}}</p>
+    <table>
+        <tr>
+            <td>What service do you provide</td>
+            <td><input name="serviceTxt" type="text" id="serviceTxt"/></td>
+        </tr>
+        <tr>
+            <td>What is your status</td>
+            <td>
+                <select name="statusTxt" id="statusTxt">
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td/>
+            <td><button onclick="update_profile()">Update Your Profile</button></td>
+        </tr>
+    </table>
+    <p/>
+    <a href="/">home</a>
+</body>
+</html>

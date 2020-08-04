@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function register() {
+            var user = document.getElementById("userTxt").value;
+            window.location.href = '/register?user=' + user;
+        }
+        function balance() {
+            var user = document.getElementById("userTxt").value;
+            window.location.href = '/balance?user=' + user;
+        }
+        function profile() {
+            var user = document.getElementById("userTxt").value;
+            window.location.href = '/profile?user=' + user;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Home</h1>
+    <p>{{content}}</p>
+    <input name="userTxt" type="text" id="userTxt"/>
+    <button onclick="register()">Register</button>
+    <p/>
+    <a href="/shop">Shop</a>
+    <p/>
+    <a href="/pay">Pay</a>
+    <p/>
+    <a href="/orders_in_progress">Orders In Progress</a>
+    <p/>
+    <a href="/orders_complete">Orders Complete</a>
+    <p/>
+    <button onclick="balance()">Check Balance</button>
+    <p/>
+    <button onclick="profile()">Update Your Profile</button>
+</body>
+</html>
