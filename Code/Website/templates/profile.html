@@ -7,7 +7,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript">
         function update_profile() {
-            alert('profile updated')
+            var svc = document.getElementById("serviceTxt").value;
+            var status = document.getElementById("statusTxt").value;
+            var xhttp = new XMLHttpRequest();
+
+            req = "http://127.0.0.1:5000/update?service=" + svc + "&status=" + status
+
+            xhttp.open("GET", req, true);
+            xhttp.send();
+
+            alert('update sent');
         }
     </script>
 </head>

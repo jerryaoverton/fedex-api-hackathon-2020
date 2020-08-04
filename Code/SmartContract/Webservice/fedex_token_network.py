@@ -1,16 +1,15 @@
 from flask import Flask, request, jsonify
-from flask_socketio import SocketIO
+from flask_socketio import SocketIO, send
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret'
-socketio = SocketIO(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 
-@app.route('/update')
-def update():
-    status = jsonify(request.args['status'])
-    socketio.emit("status", broadcast=True)
-    return "updating provider status " + str(status)
+@socketio.on('message')
+def handle_message(msg):
+    print('Message ' + msg)
+    send(msg, broadcast=True)
 
 
 @app.route('/start')
@@ -28,5 +27,14 @@ def acknowledge():
     return "acknowledging order"
 
 
+@app.route('/update')
+def update():
+    service = request.args['service']
+    status = request.args['status']
+    msg = str(service) + " is now " + str(status)
+    socketio.send(msg, broadcast=True)
+    return "updating provider status " + str(status)
+
+
 if __name__ == '__main__':
-    socketio.run(app, port=2000)
+    socketio.run(app, debug=True)

@@ -15,8 +15,8 @@ def register():
 
 @app.route('/shop')
 def shop():
-    _items = ['coffee', 'tea', 'milk', 'eggs', 'bread']
-    return render_template('shop.html', items=_items)
+    _content = "Here is some stuff you can buy"
+    return render_template('shop.html', content=_content)
 
 
 @app.route('/pay')
