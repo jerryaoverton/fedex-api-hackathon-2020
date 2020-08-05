@@ -3,16 +3,16 @@
 <head>
     <script type="text/javascript">
         function register() {
-            var user = document.getElementById("userTxt").value;
-            window.location.href = '/register?user=' + user;
+            var user_id = document.getElementById("user_idTxt").value;
+            window.location.href = '/register?user_id=' + user_id;
         }
         function balance() {
             var user = document.getElementById("userTxt").value;
             window.location.href = '/balance?user=' + user;
         }
         function profile() {
-            var user = document.getElementById("userTxt").value;
-            window.location.href = '/profile?user=' + user;
+            var user_id = document.getElementById("user_idTxt").value;
+            window.location.href = '/profile?user_id=' + user_id;
         }
     </script>
     <meta charset="UTF-8">
@@ -21,8 +21,10 @@
 <body>
     <h1>Home</h1>
     <p>{{content}}</p>
-    <input name="userTxt" type="text" id="userTxt"/>
+    <input name="user_idTxt" type="text" id="user_idTxt" value="joverton"/>
     <button onclick="javascript:register()">Register</button>
+    <p/>
+    <button onclick="profile()">Update Your Profile</button>
     <p/>
     <a href="/shop" target="_blank">Shop</a>
     <p/>
@@ -33,7 +35,5 @@
     <a href="/orders_complete">Orders Complete</a>
     <p/>
     <button onclick="balance()">Check Balance</button>
-    <p/>
-    <button onclick="profile()">Update Your Profile</button>
 </body>
 </html>

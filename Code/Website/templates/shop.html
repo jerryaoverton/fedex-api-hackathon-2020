@@ -14,9 +14,15 @@
         <script type="text/javascript">
             $(document).ready(function() {
 
-                var socket = io.connect('http://127.0.0.1:5000');
+                alert('going to connect')
+                var socket = io.connect('http://127.0.0.1:5000/profile');
+
+                	socket.on('connect', function() {
+                        alert('we are connected');
+                    });
 
                 socket.on('message', function(msg) {
+                    alert('msg detected')
                     $("#messages").append('<li>'+msg+'</li>');
                     console.log('Received message');
                 });

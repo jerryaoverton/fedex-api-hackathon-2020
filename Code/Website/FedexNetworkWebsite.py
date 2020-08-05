@@ -1,5 +1,8 @@
+import requests
 from flask import Flask, render_template, request
 app = Flask(__name__)
+
+fedex_token_network = 'http://127.0.0.1:5000/'
 
 
 @app.route('/')
@@ -9,8 +12,14 @@ def home():
 
 @app.route('/register')
 def register():
-    _user = request.args['user']
-    return render_template('register.html', user=_user)
+    user_id = request.args['user_id']
+
+    svc = '/register_user'
+    params = '?user_id=' + user_id
+    url = fedex_token_network + svc + params
+    _msg = requests.get(url).content
+
+    return render_template('register.html', msg=_msg)
 
 
 @app.route('/shop')
@@ -28,13 +37,13 @@ def pay():
 @app.route('/orders_in_progress')
 def orders_in_progress():
     _msg = "See things that have been ordered here"
-    return render_template('orders_in_progress.html', msg=_msg)
+    return render_template('review_orders.html', msg=_msg)
 
 
 @app.route('/orders_complete')
 def orders_complete():
     _msg = "See completed orders here"
-    return render_template('orders_complete.html', msg=_msg)
+    return render_template('update_order.html', msg=_msg)
 
 @app.route('/balance')
 def balance():
@@ -44,8 +53,8 @@ def balance():
 
 @app.route('/profile')
 def profile():
-    user = request.args['user']
-    _msg = "The profile for " + user
+    user_id = request.args['user_id']
+    _msg = "The profile for " + user_id
     return render_template('profile.html', msg=_msg)
 
 if __name__ == '__main__':
