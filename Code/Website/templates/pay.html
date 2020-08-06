@@ -3,12 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Pay</title>
+
+    <script type="text/javascript">
+        function pay() {
+            var sender = document.getElementById("sender_Txt").value;
+            var receiver = document.getElementById("receiver_Txt").value;
+            var amount = document.getElementById("amount_Txt").value;
+
+            var xhttp = new XMLHttpRequest();
+
+            req = "http://127.0.0.1:5000/pay?sender=" + sender + "&receiver=" + receiver + "&amount=" + amount
+            xhttp.open("GET", req, true);
+            xhttp.send();
+
+            alert('payment sent');
+        }
+    </script>
 </head>
 <body>
     <p>
         {{msg}}
     </p>
     <p/>
+    <table>
+        <tr>
+            <td>Sender</td>
+            <td><input name="sender_Txt", type="text", id="sender_Txt", value="fedex"/></td>
+        </tr>
+        <tr>
+            <td>Receiver</td>
+            <td><input name="receiver_Txt", type="text", id="receiver_Txt", value="joverton"/></td>
+        </tr>
+        <tr>
+            <td>Amount</td>
+            <td><input name="amount_Txt", type="text", id="amount_Txt", value="250"/></td>
+        </tr>
+        <tr>
+            <td/>
+            <td><button onclick="pay()">Transfer</button></td>
+        </tr>
+    </table>
     <a href="/">home</a>
 
 </body>

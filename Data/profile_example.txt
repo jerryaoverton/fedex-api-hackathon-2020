@@ -1,0 +1,7 @@
+profile_example = {'image_url': 'www.pic.com/profile.jpg',
+                   'profile_url': 'www.myprofile.com',
+                   'description': 'A great and powerful technologist',
+                   'tags': 'drone_tech, programmer',
+                   'rating': 3,
+                   'status': 'active'
+                   }

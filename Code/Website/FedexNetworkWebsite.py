@@ -14,6 +14,7 @@ def home():
 def register():
     user_id = request.args['user_id']
 
+    # register user with the smart contract
     svc = '/register_user'
     params = '?user_id=' + user_id
     url = fedex_token_network + svc + params
@@ -45,11 +46,20 @@ def orders_complete():
     _msg = "See completed orders here"
     return render_template('update_order.html', msg=_msg)
 
+
 @app.route('/balance')
 def balance():
-    user = request.args['user']
-    _balance = "The balance of " + user + " is 1999"
-    return render_template('balance.html', balance=_balance)
+    user_id = request.args['user_id']
+
+    # get the user's balance from the smart contract
+    svc = '/user_balance'
+    params = '?user_id=' + user_id
+    url = fedex_token_network + svc + params
+    _balance = requests.get(url).content
+
+    _msg = "The balance of " + user_id + " is " + str(_balance)
+    return render_template('balance.html', msg=_msg)
+
 
 @app.route('/profile')
 def profile():

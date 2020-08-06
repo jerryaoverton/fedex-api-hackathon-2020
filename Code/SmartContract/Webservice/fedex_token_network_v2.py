@@ -73,6 +73,18 @@ def user_profile():
     return profile
 
 
+@app.route('/user_balance')
+def user_balance():
+    user_id = request.args['user_id']
+
+    balance = 0
+    for user in users:
+        if user['id'] == user_id:
+            balance = user['tokens']
+
+    return str(balance)
+
+
 @app.route('/update_order')
 def update_order():
     order = request.args['order']
@@ -85,7 +97,7 @@ def update_order():
 def pay():
     sender = request.args['sender']
     receiver = request.args['receiver']
-    amt = request.args['amt']
+    amt = int(request.args['amount'])
 
     for user in users:
         if user['id'] == sender:

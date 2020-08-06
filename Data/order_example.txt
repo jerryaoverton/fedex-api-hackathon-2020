@@ -1,0 +1,9 @@
+order_example = {'supplier': '123abc',
+                 'customer': '456xyz',
+                 'payment_method': 'tokens',
+                 'price': 100,
+                 'order_details': 'charge the drone to 100%',
+                 'terms_and_conditions': 'must not harm drone',
+                 'status': 'complete',
+                 'status_date': '08/05/2020'
+                 }
