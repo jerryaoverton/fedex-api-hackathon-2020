@@ -35,16 +35,16 @@ def pay():
     return render_template('pay.html', msg=_msg)
 
 
-@app.route('/orders_in_progress')
-def orders_in_progress():
-    _msg = "See things that have been ordered here"
-    return render_template('review_orders.html', msg=_msg)
-
-
-@app.route('/orders_complete')
-def orders_complete():
-    _msg = "See completed orders here"
+@app.route('/update_order')
+def update_order():
+    _msg = "create or update your order here"
     return render_template('update_order.html', msg=_msg)
+
+
+@app.route('/review_orders')
+def review_orders():
+    _msg = "See updated orders here"
+    return render_template('review_orders.html', msg=_msg)
 
 
 @app.route('/balance')

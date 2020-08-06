@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Orders In Progress</title>
-</head>
-<body>
-    <p>{{msg}}</p>
-    <p/>
-    <a href="/">home</a>
-</body>
+<html>
+    <head>
+        <title>Review Orders</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <p>{{msg}}</p>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                var socket = io.connect('http://127.0.0.1:5000/order');
+
+                	socket.on('connect', function() {
+                        alert('we are connected');
+                    });
+
+                socket.on('message', function(msg) {
+                    alert('msg detected')
+                    $("#messages").append('<li>'+msg+'</li>');
+                    console.log('Received message');
+                });
+            });
+        </script>
+        <ul id="messages"></ul>
+    </body>
 </html>
