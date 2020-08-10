@@ -26,7 +26,7 @@ profile_example_Business = {'first_name': 'Ann',
                    'rating': 4,
                    'status': 'active'
                    }
-For Individual-
+For INDIVIDUAL-
 profile_example_individual = {'first_name': 'Shivani',
                    'last_name': 'Aggarwal',
                    'RegistrationType': 'Individual',
