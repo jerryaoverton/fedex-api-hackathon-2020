@@ -24,7 +24,7 @@ The smart contract is a Python/Flask web service running on Heroku. In productio
 [More stock footage]
 Results
 
-The FedEx APIs can do more than support apps. It can support a token economy where startups thrive.  And the resulting block chain data could make the FedEx APIs even more valuable. Welcome to the FedEx economy.
+The FedEx APIs can do more than support apps. They can support a token economy where startups thrive.  And the resulting block chain data could make the FedEx APIs even more valuable. Welcome to the FedEx economy.
 
 [Footage of the team]
 The Team
