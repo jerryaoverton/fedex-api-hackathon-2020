@@ -5,3 +5,38 @@ profile_example = {'image_url': 'www.pic.com/profile.jpg',
                    'rating': 3,
                    'status': 'active'
                    }
+                   
+
+----------------------------
+Updated profile Examples:
+
+For BUSINESS-
+profile_example_Business = {'first_name': 'Ann',
+                   'last_name': 'Pizza',
+                   'RegistrationType': 'Business',
+                   'email': 'imb@gmail.com',
+                   'area_code': '6',
+		               'phone': '897897987',
+                   'BusinessType', 'Food' 
+                   'Business Address': 'xyz'
+		               'image_url': 'www.pic.com/profile.jpg',
+                   'profile_url': 'website_url?userid=imb@gmm',
+                   'description': 'A great and powerful Food Business',
+                   'tags': 'Businessr',
+                   'rating': 4,
+                   'status': 'active'
+                   }
+For Individual-
+profile_example_individual = {'first_name': 'Shivani',
+                   'last_name': 'Aggarwal',
+                   'RegistrationType': 'Individual',
+                   'email': 'iu@gmail.com',
+                   'area_code': '6',
+		               'phone': '897897987',
+		               'image_url': 'www.pic.com/profile.jpg',
+                   'profile_url': 'website_url?userid=iu@gmail.com',
+                   'description': 'A great and powerful technologist',
+                   'tags': 'drone_tech, programmer',
+                   'rating': 3,
+                   'status': 'active'
+                   }
