@@ -12,7 +12,7 @@ The FedEx economy runs on FX tokens and is powered by a smart contract running o
 
 Let's start a business. Register in the marketplace. Create a profile and launch your startup. 
 
-Let's buy something. Shop for products and services, place an order, and make a payment.
+Let's buy something. Shop for products and services, place an order, and make a payment. Thanks to the FedEx APIs, you can hire a bot to make deliveries.
 
 You can buy tokens on the exchange. You can sell your tokens on the exchange. Or, using your wallet, you can give your tokens away.
 
