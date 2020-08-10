@@ -18,11 +18,11 @@ profile_example_Business = {'first_name': 'Ann',
                    'area_code': '6',
 		               'phone': '897897987',
                    'BusinessType', 'Food' 
-                   'Business Address': 'xyz'
+                   'BusinessAddress': 'xyz'
 		               'image_url': 'www.pic.com/profile.jpg',
                    'profile_url': 'website_url?userid=imb@gmm',
                    'description': 'A great and powerful Food Business',
-                   'tags': 'Businessr',
+                   'tags': 'Business',
                    'rating': 4,
                    'status': 'active'
                    }
