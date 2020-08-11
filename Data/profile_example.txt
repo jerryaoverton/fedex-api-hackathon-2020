@@ -40,3 +40,22 @@ profile_example_individual = {'first_name': 'Shivani',
                    'rating': 3,
                    'status': 'active'
                    }
+		  
+FOR DRONE:
+
+{
+  "BusinessAddress": "3600  Lancaster",
+  "BusinessType": "Individual",
+  "RegistrationType": "Business",
+  "area_code": "1",
+  "description": "the big business",
+  "drone_status": "Idle",
+  "first_name": "Sh",
+  "image_url": "https://static1.grsites.com/archive/textures/natfl/natfl084.jpg",
+  "last_name": "Ag",
+  "phone": "467567576",
+  "properties": "type:Quadcopter, capacity:2kgs, flyduration:10mins",
+  "rating": "5",
+  "status": "active",
+  "tags": "business , big"
+}
