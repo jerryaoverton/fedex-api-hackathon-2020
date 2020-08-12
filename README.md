@@ -38,13 +38,15 @@ The finite-state machine is a Python/Flask web service running on Heroku. When i
 The smart contract is a Python/Flask web service running on Heroku. We have written a version of the smart contract in both Python/Flask and Solidity. In production, we'll deploy the smart contract as solidity code running on the live Etherium block chain. For demonstration, we deployed the smart contract as a web service to avoid the cost and complication of running on a live block chain network.
 
 ### The FedEx Marketplace
-
+ 
 The FedEx marketplace is a Python/Flask website that communicates with the smart contract. The client-side code runs Javascript and HTML5. The server-side code executes in Python on the Heroku server. Events like order and profile updates are communicated from the smart contract to the marketplace in real time using web sockets.
 
 ## Important Links
 
 - Main presentation. Open this in presentation mode.
 - Summary video
-- The drone state machine code
-- The smart contract (web service version)
+- The [FedEx Economy marketplace webiste)(https://fedex-economy-market.herokuapp.com/)
+- [The drone state machine code](https://github.com/jerryaoverton/fedex-economy-drone)
+- [The smart contract (web service version)](https://github.com/jerryaoverton/fedex-economy-smartcontract)
 - The smart contract (Solidity version)
+- [The FedEx Economy marketplace website code](https://github.com/jerryaoverton/fedex-economy-market)
