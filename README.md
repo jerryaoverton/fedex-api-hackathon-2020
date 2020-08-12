@@ -45,7 +45,7 @@ The FedEx marketplace is a Python/Flask website that communicates with the smart
 
 - Main presentation. Open this in presentation mode.
 - Summary video
-- The [FedEx Economy marketplace webiste)(https://fedex-economy-market.herokuapp.com/)
+- The [FedEx Economy marketplace website](https://fedex-economy-market.herokuapp.com/)
 - [The drone state machine code](https://github.com/jerryaoverton/fedex-economy-drone)
 - [The smart contract (web service version)](https://github.com/jerryaoverton/fedex-economy-smartcontract)
 - The smart contract (Solidity version)
