@@ -10,16 +10,15 @@
 ## Overview
 FedEx unveiled the [SameDay Bot](https://www.youtube.com/results?search_query=fedex+sameday+bot)-- an autonomous vehicle for last-mile delivery. Using the [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html), we can transform the bots into a new way to fund small businesses. The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) allow the bots to make deliveries and accept FedEx tokens. The tokens fund startups. The startups are an engine for growth. This is the idea behind FedEx economy. 
 
-The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) can do more than support apps. It can support a token economy where startups thrive.  And the resulting block chain data could make the FedEx APIs even more valuable.
+The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) can do more than support apps. It can support a token economy where startups thrive.  And the resulting block chain data could make the [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) even more valuable.
 
 ## The Demo
-The FedEx economy runs on FX tokens and is powered by a smart contract running on the block chain. Start by registering with the smart contract. You'll need FX tokens. You can buy them on the token exchange, you can earn them in the market, or they can be granted to you by FedEx (or anyone else with tokens.)
+This video provides a demo of the [FedEx economy](https://fedex-economy-market.herokuapp.com/) functionionality. It covers how to:
+1. Registering with the smart contract. 
+1. Buying, earning and exchanging FeX tokens
+1. Launching business
+1. Shopping for products and services (including [FedEx SameDay bots](https://www.youtube.com/results?search_query=fedex+sameday+bot) drone deliveries)
 
-Let's start a business. Register in the marketplace. Create a profile and launch your startup. 
-
-Let's buy something. Shop for products and services, place an order, and make a payment.
-
-You can buy tokens on the exchange. You can sell your tokens on the exchange. Or, using your wallet, you can give your tokens away.
 
 ## The Design
 
@@ -35,7 +34,7 @@ The finite-state machine is a Python/Flask web service running on Heroku. When i
 
 ### The Smart Contract
 
-The smart contract is a Python/Flask web service running on Heroku. We have written a version of the smart contract in both Python/Flask and Solidity. In production, we'll deploy the smart contract as solidity code running on the live Etherium block chain. For demonstration, we deployed the smart contract as a web service to avoid the cost and complication of running on a live block chain network.
+The smart contract is a Python/Flask web service running on Heroku. We have written a version of the smart contract in both Python/Flask and Solidity. In production, we'll deploy the smart contract as solidity code running on the live [Etherium](https://www.coindesk.com/learn/ethereum-101/what-is-ethereum) block chain. For demonstration, we deployed the smart contract as a web service to avoid the cost and complication of running on a live block chain network.
 
 ### The FedEx Marketplace
  
