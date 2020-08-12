@@ -1,4 +1,5 @@
-order_example = {'supplier': '123abc',
+order_example = {'order_id': 'afd8379upjcdas98sd',
+                 'supplier': '123abc',
                  'customer': '456xyz',
                  'payment_method': 'tokens',
                  'price': 100,
