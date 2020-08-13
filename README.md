@@ -43,7 +43,7 @@ The FedEx marketplace is a Python/Flask website that communicates with the smart
 ## Installing the Applications
 
 The drone, smart contract, and web site are all Python applications. Each should be installed and run as follows:
-1. [Download an install Python](https://www.python.org/downloads/)
+1. [Download and install Python](https://www.python.org/downloads/)
 1. Use the requirements.txt file to install dependent packages by [running pip: -r requirements.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
 1. Use the command line to [run the Python script](https://realpython.com/run-python-scripts/)
 
@@ -56,5 +56,5 @@ Start the smart contract first, then the website, then the drone. The local URL 
 - The [FedEx Economy marketplace website](https://fedex-economy-market.herokuapp.com/)
 - [The drone state machine code](https://github.com/jerryaoverton/fedex-economy-drone)
 - [The smart contract (web service version)](https://github.com/jerryaoverton/fedex-economy-smartcontract)
-- The smart contract (Solidity version)
+- [The smart contract (Solidity version)](https://github.com/jerryaoverton/fedex-api-hackathon-2020/tree/master/Code/Solidity%20Smart%20Contract)
 - [The FedEx Economy marketplace website code](https://github.com/jerryaoverton/fedex-economy-market)
