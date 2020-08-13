@@ -1,7 +1,7 @@
 # The FedEx Economy
-**The Problem:** The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) can turn the [FedEx SameDay bots](https://www.youtube.com/results?search_query=fedex+sameday+bot) into a new way to fund small businesses. We can build a token economy where startups thrive. 
+**The Problem:** The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) can turn the [FedEx SameDay bots](https://www.youtube.com/results?search_query=fedex+sameday+bot) into a new way to fund small businesses. We can build a token economy where large and small businesses connect and startups thrive. 
 
-**The Hack:** The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) allow the bots to make deliveries and accept FedEx tokens. The tokens fund startups. The startups are an engine for growth
+**The Hack:** The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) allow the bots to make deliveries and accept FedEx tokens. The tokens (supported by an ecosystem of large and small businesses) fund startups. The startups are an engine for growth.
 
 **Potential Impact:** The bots become self-owning infrastructure that powers a small business ecosystem. The ecosystem generates block chain data that allow for new [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html).
 
