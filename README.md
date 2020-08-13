@@ -1,4 +1,4 @@
-# The Fedex Economy
+# The FedEx Economy
 **The Problem:** The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) can turn the [FedEx SameDay bots](https://www.youtube.com/results?search_query=fedex+sameday+bot) into a new way to fund small businesses. We can build a token economy where startups thrive. 
 
 **The Hack:** The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) allow the bots to make deliveries and accept FedEx tokens. The tokens fund startups. The startups are an engine for growth
@@ -13,7 +13,7 @@ FedEx unveiled the [SameDay Bot](https://www.youtube.com/results?search_query=fe
 The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) can do more than support apps. It can support a token economy where startups thrive.  And the resulting block chain data could make the [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) even more valuable.
 
 ## The Demo
-This video provides a demo of the [FedEx economy](https://fedex-economy-market.herokuapp.com/) functionionality. It covers how to:
+This video provides a demo of the [FedEx economy](https://fedex-economy-market.herokuapp.com/) functionality. It covers how to:
 1. Registering with the smart contract. 
 1. Buying, earning and exchanging FeX tokens
 1. Launching business
@@ -22,11 +22,11 @@ This video provides a demo of the [FedEx economy](https://fedex-economy-market.h
 
 ## The Design
 
-We wrote a finite-state machine that extends the artificial intelligence of the [FedEx SameDay bot](https://www.youtube.com/results?search_query=fedex+sameday+bot). It turns the drone into self-owning infrastructure that earns FeX tokens by making deliveries and using those tokens to pay for its maintenance. The drone AI depends on the [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) to validate delivery jobs sent by users of the marketplace. The drone is programmed to manage its own repairs. The drone determines when it needs maintenance, and can decide to hire a technician from the FedEx Economy.  The drone uses the [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) to locate a nearby FedEx office and arrange to meet the technician for repairs.
+We wrote a finite-state machine that extends the artificial intelligence of the [FedEx SameDay bot](https://www.youtube.com/results?search_query=fedex+sameday+bot). It turns the drone into self-owning infrastructure that earns FeX tokens by making deliveries and using those tokens to pay for its maintenance. The drone AI depends on the [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) to validate delivery jobs sent by users of the marketplace. The drone is programmed to manage its own repairs. The drone determines when it needs maintenance and can decide to hire a technician from the FedEx Economy.  The drone uses the [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) to locate a nearby FedEx office and arrange to meet the technician for repairs.
 
 The smart contract automatically enforces the rules of the FedEx Economy. It determines how to create and distribute FeX tokens. It keeps track of service providers, service consumers and the FeX balances of everyone participating in the FedEx Economy. The drone interacts directly with the smart contract to take on delivery jobs and hire technicians for maintenance. Human users interact with the smart contract through the [marketplace website](https://fedex-economy-market.herokuapp.com/).
 
-The [marketplace website](https://fedex-economy-market.herokuapp.com/) is how allows entreprenuers to create a startup in the FedEx economy. Startups receive initial funding from FedEx in the form of FeX tokens. A startup can use those tokens to purchase services (like drone deliveries) needed for the business. They can also earn FeX by providing services to shoppers. The marketplace allows shoppers to purchase any service registered in the FedEx economy. Shoppers can browse service providers, read profiles, and make orders. Anyone registered in the marketplace can check their FeX balance and exchange dollars for FeX.
+The [marketplace website](https://fedex-economy-market.herokuapp.com/) is how allows entrepreneurs to create a startup in the FedEx economy. Startups receive initial funding from FedEx in the form of FeX tokens. A startup can use those tokens to purchase services (like drone deliveries) needed for the business. They can also earn FeX by providing services to shoppers. The marketplace allows shoppers to purchase any service registered in the FedEx economy. Shoppers can browse service providers, read profiles, and make orders. Anyone registered in the marketplace can check their FeX balance and exchange dollars for FeX.
 
 ### The FedEx SameDay Bot
 
