@@ -3,7 +3,7 @@
 
 **The Hack:** The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) allow the bots to make deliveries and accept FedEx tokens. The tokens (supported by an ecosystem of large and small businesses) fund startups. The startups are an engine for growth.
 
-**Potential Impact:** The bots become self-owning infrastructure that powers a small business ecosystem. The ecosystem generates block chain data that allow for new [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html).
+**Potential Impact:** The bots become self-owning infrastructure that powers a business ecosystem. The ecosystem generates block chain data that allow for new [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html).
 
 **Watch the overview video...**
 
