@@ -30,7 +30,7 @@ The [marketplace website](https://fedex-economy-market.herokuapp.com/) is how al
 
 ### The FedEx SameDay Bot
 
-The finite-state machine is a Python/Flask web service running on Heroku. When initialized, the drone automatically connects with the smart contract and begins autonomous operations. The bot code communicates with the [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) usign HTTP.
+The finite-state machine is a Python/Flask web service running on Heroku. When initialized, the drone automatically connects with the smart contract and begins autonomous operations. The bot code communicates with the [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) using HTTP.
 
 ### The Smart Contract
 
