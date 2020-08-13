@@ -13,7 +13,7 @@ FedEx unveiled the [SameDay Bot](https://www.youtube.com/results?search_query=fe
 The [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) can do more than support apps. It can support a token economy where startups thrive.  And the resulting block chain data could make the [FedEx APIs](https://www.fedex.com/en-ca/resources-tools/api.html) even more valuable.
 
 ## The Demo
-This video provides a demo of the [FedEx economy](https://fedex-economy-market.herokuapp.com/) functionality. It covers how to:
+The enclosed video provides a demo of the [FedEx economy](https://fedex-economy-market.herokuapp.com/) functionality. It covers:
 1. Registering with the smart contract. 
 1. Buying, earning and exchanging FeX tokens
 1. Launching business
@@ -39,6 +39,15 @@ The smart contract is a Python/Flask web service running on Heroku. We have writ
 ### The FedEx Marketplace
  
 The FedEx marketplace is a Python/Flask website that communicates with the smart contract. The client-side code runs Javascript and HTML5. The server-side code executes in Python on the Heroku server. Events like order and profile updates are communicated from the smart contract to the marketplace in real time using web sockets.
+
+##Installing the Applications
+
+The drone, smart contract, and web site are all Python applications. Each should be installed and run as follows:
+1. [Download an install Python](https://www.python.org/downloads/)
+1. Use the requirements.txt file to install dependent packages by [running pip: -r requirements.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
+1. Use the command line to [run the Python script](https://realpython.com/run-python-scripts/)
+
+Start the smart contract first, then the website, then the drone. The local URL for accessing each component will be given in the command line after successful execution.
 
 ## Important Links
 
