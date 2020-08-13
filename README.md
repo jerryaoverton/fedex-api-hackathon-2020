@@ -38,7 +38,7 @@ The smart contract is a Python/Flask web service running on Heroku. We have writ
 
 ### The FedEx Marketplace
  
-The FedEx marketplace is a Python/Flask website that communicates with the smart contract. The client-side code runs Javascript and HTML5. The server-side code executes in Python on the Heroku server. Events like order and profile updates are communicated from the smart contract to the marketplace in real time using web sockets.
+The FedEx marketplace is a Python/Flask website that communicates with the smart contract. The client-side code runs JavaScript and HTML5. The server-side code executes in Python on the Heroku server. Events like order and profile updates are communicated from the smart contract to the marketplace in real time using web sockets.
 
 ## Installing the Applications
 
